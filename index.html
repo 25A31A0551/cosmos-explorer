@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<meta name="description"
+content="Cosmos Explorer — interactive exploration of planets, stars, black holes, galaxies, Big Bang, relativity, string theory, Theia and deep space.">
+
+<meta name="theme-color" content="#010208">
+
+<title>Cosmos Explorer — Astronomy & Cosmos Guide</title>
+
+<!-- IMPORTANT:
+     index.html is inside /html/
+     so CSS and JS are one level above.
+-->
+<link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<div class="page-progress" id="pageProgress"></div>
+
+<header class="site-header">
+
+<div class="header-container">
+
+<a href="index.html" class="logo">
+COSMOS<span>EXPLORER</span>
+</a>
+
+<button
+class="nav-toggle"
+id="navToggle"
+aria-label="Toggle navigation"
+type="button">
+
+<span class="bar"></span>
+<span class="bar"></span>
+<span class="bar"></span>
+
+</button>
+
+<nav class="nav-menu" id="navMenu">
+
+<a href="index.html" class="nav-link active">
+Home
+</a>
+
+
+<a href="../pages/sun.html" class="nav-link">
+Sun
+</a>
+
+<a href="../pages/mercury.html" class="nav-link">
+Planets
+</a>
+
+<a href="../pages/facts.html" class="nav-link">
+Facts
+</a>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<main>
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="section-container">
+
+<div class="cosmic-badge">
+LIVE COSMIC EXPLORATION
+</div>
+
+<h1 class="section-title glow-text">
+Journey Into The Infinite Cosmos
+</h1>
+
+<p class="section-desc">
+
+Explore planets, stars, black holes, galaxies,
+cosmic origins, relativity, string theory,
+Theia, spacetime and the deepest mysteries
+of the observable universe through an
+interactive astronomical experience.
+
+</p>
+
+
+<div class="hero-visual" id="heroVisual">
+
+<div class="page-orbit"></div>
+
+<div
+class="css-celestial css-earth"
+id="heroPlanet">
+</div>
+
+</div>
+
+
+<div class="glass-card">
+
+<h2>
+Welcome to Cosmos Explorer
+</h2>
+
+<p>
+
+A visual astronomy experience designed to make
+the universe easier to explore. Discover planetary
+worlds, stellar evolution, extreme gravity,
+cosmic history and theoretical physics.
+
+</p>
+
+<p>
+
+Move your pointer across the cosmic objects,
+explore the interactive sections and navigate
+into individual astronomical worlds.
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     SOLAR SYSTEM
+========================= -->
+
+<section class="section-container">
+
+<div class="cosmic-badge">
+SOLAR SYSTEM
+</div>
+
+<h2 class="section-title">
+Our Planetary Neighborhood
+</h2>
+
+<p class="section-desc">
+
+The Solar System contains the Sun, eight planets,
+dwarf planets, moons, asteroids, comets and
+countless smaller objects.
+
+</p>
+
+
+<div class="grid-cards">
+
+
+<!-- MERCURY -->
+
+<div class="glass-card fact-card scroll-reveal">
+
+<div class="page-hero-art art-mercury">
+
+<div class="page-orbit"></div>
+
+<div class="art-object">
+
+<img
+src="https://science.nasa.gov/wp-content/uploads/2023/05/mercury-messenger-globe.jpg"
+alt="Mercury"
+loading="lazy"
+onerror="this.style.display='none'"
+>
+
+</div>
+
+</div>
+
+<h3>
+Mercury
+</h3>
+
+<p>
+
+The smallest planet and the closest planet
+to the Sun. Its heavily cratered surface
+records billions of years of impacts.
+
+</p>
+
+<a
+href="../pages/mercury.html"
+class="cosmic-badge">
+
+EXPLORE MERCURY
+
+</a>
+
+</div>
+
+
+<!-- VENUS -->
+
+<div class="glass-card fact-card scroll-reveal">
+
+<div class="page-hero-art art-venus">
+
+<div class="page-orbit"></div>
+
+<div class="art-object">
+
+<img
+src="https://science.nasa.gov/wp-content/uploads/2023/05/venus.jpg"
+alt="Venus"
+loading="lazy"
+onerror="this.style.display='none'"
+>
+
+</div>
+
+</div>
+
+<h3>
+Venus
+</h3>
+
+<p>
+
+A world hidden beneath thick clouds and
+possessing an extreme greenhouse atmosphere.
+
+</p>
+
+</div>
+
+
+<!-- EARTH -->
+
+<div class="glass-card fact-card scroll-reveal">
+
+<div class="page-hero-art art-earth">
+
+<div class="page-orbit"></div>
+
+<div class="art-object">
+
+<img
+src="https://science.nasa.gov/wp-content/uploads/2023/05/earth.jpg"
+alt="Earth"
+loading="lazy"
+onerror="this.style.display='none'"
+>
+
+</div>
+
+</div>
+
+<h3>
+Earth
+</h3>
+
+<p>
+
+Our home world, covered by oceans and possessing
+the known conditions necessary for complex life.
+
+</p>
+
+</div>
+
+
+<!-- MARS -->
+
+<div class="glass-card fact-card scroll-reveal">
+
+<div class="page-hero-art art-mars">
+
+<div class="page-orbit"></div>
+
+<div class="art-object">
+
+<img
+src="https://science.nasa.gov/wp-content/uploads/2023/05/mars.jpg"
+alt="Mars"
+loading="lazy"
+onerror="this.style.display='none'"
+>
+
+</div>
+
+</div>
+
+<h3>
+Mars
+</h3>
+
+<p>
+
+A cold desert world with ancient valleys,
+enormous volcanoes and evidence of ancient
+water activity.
+
+</p>
+
+</div>
+
+
+<!-- JUPITER -->
+
+<div class="glass-card fact-card scroll-reveal">
+
+<div class="page-hero-art art-jupiter">
+
+<div class="page-orbit"></div>
+
+<div class="art-object">
+
+<img
+src="https://science.nasa.gov/wp-content/uploads/2023/05/jupiter.jpg"
+alt="Jupiter"
+loading="lazy"
+onerror="this.style.display='none'"
+>
+
+</div>
+
+</div>
+
+<h3>
+Jupiter
+</h3>
+
+<p>
+
+The largest planet in the Solar System,
+dominated by hydrogen, helium and enormous
+atmospheric storms.
+
+</p>
+
+</div>
+
+
+<!-- SATURN -->
+
+<div class="glass-card fact-card scroll-reveal">
+
+<div class="page-hero-art art-saturn">
+
+<div class="page-orbit"></div>
+
+<div class="art-object">
+
+<img
+src="https://science.nasa.gov/wp-content/uploads/2023/05/saturn.jpg"
+alt="Saturn"
+loading="lazy"
+onerror="this.style.display='none'"
+>
+
+</div>
+
+</div>
+
+<h3>
+Saturn
+</h3>
+
+<p>
+
+A gas giant famous for its extensive ring system
+made from ice, rock and dust particles.
+
+</p>
+
+</div>
+
+
+<!-- URANUS -->
+
+<div class="glass-card fact-card scroll-reveal">
+
+<div class="page-hero-art art-uranus">
+
+<div class="page-orbit"></div>
+
+<div class="art-object">
+
+<img
+src="https://science.nasa.gov/wp-content/uploads/2023/05/uranus.jpg"
+alt="Uranus"
+loading="lazy"
+onerror="this.style.display='none'"
+>
+
+</div>
+
+</div>
+
+<h3>
+Uranus
+</h3>
+
+<p>
+
+An ice giant with a dramatically tilted rotation
+axis and a blue-green atmosphere containing methane.
+
+</p>
+
+</div>
+
+
+<!-- NEPTUNE -->
+
+<div class="glass-card fact-card scroll-reveal">
+
+<div class="page-hero-art art-neptune">
+
+<div class="page-orbit"></div>
+
+<div class="art-object">
+
+<img
+src="https://science.nasa.gov/wp-content/uploads/2023/05/neptune.jpg"
+alt="Neptune"
+loading="lazy"
+onerror="this.style.display='none'"
+>
+
+</div>
+
+</div>
+
+<h3>
+Neptune
+</h3>
+
+<p>
+
+The most distant recognized planet in the Solar
+System, with powerful winds and a deep blue atmosphere.
+
+</p>
+
+</div>
+
+
+<!-- PLUTO -->
+
+<div class="glass-card fact-card scroll-reveal">
+
+<div class="page-hero-art art-pluto">
+
+<div class="page-orbit"></div>
+
+<div class="art-object">
+
+<img
+src="https://science.nasa.gov/wp-content/uploads/2023/05/pluto.jpg"
+alt="Pluto"
+loading="lazy"
+onerror="this.style.display='none'"
+>
+
+</div>
+
+</div>
+
+<h3>
+Pluto
+</h3>
+
+<p>
+
+A dwarf planet in the Kuiper Belt with mountains
+of water ice and a famous heart-shaped region.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     COSMIC PHYSICS
+========================= -->
+
+<section class="section-container">
+
+<div class="cosmic-badge">
+COSMIC PHYSICS
+</div>
+
+<h2 class="section-title">
+Beyond The Solar System
+</h2>
+
+<p class="section-desc">
+
+Explore concepts that describe the universe
+at its largest scales and the most extreme
+physical environments.
+
+</p>
+
+
+<div class="grid-cards">
+
+
+<!-- BIG BANG -->
+
+<div class="glass-card fact-card scroll-reveal">
+
+<div class="page-hero-art art-big-bang">
+
+<div class="page-orbit"></div>
+
+<div class="art-object"></div>
+
+</div>
+
+<h3>
+Big Bang
+</h3>
+
+<p>
+
+The early hot, dense state from which the
+observable universe has expanded and evolved.
+
+</p>
+
+</div>
+
+
+<!-- BLACK HOLE -->
+
+<div class="glass-card fact-card scroll-reveal">
+
+<div class="page-hero-art art-black-hole">
+
+<div class="page-orbit"></div>
+
+<div class="art-object"></div>
+
+</div>
+
+<h3>
+Black Hole
+</h3>
+
+<p>
+
+An extreme gravitational region from which
+nothing that crosses the event horizon can
+escape back to distant observers.
+
+</p>
+
+</div>
+
+
+<!-- WORMHOLES -->
+
+<div class="glass-card fact-card scroll-reveal">
+
+<div class="page-hero-art art-wormholes">
+
+<div class="page-orbit"></div>
+
+<div class="art-object"></div>
+
+</div>
+
+<h3>
+Wormholes
+</h3>
+
+<p>
+
+Hypothetical structures that arise in certain
+mathematical solutions of spacetime geometry.
+
+</p>
+
+</div>
+
+
+<!-- STRING THEORY -->
+
+<div class="glass-card fact-card scroll-reveal">
+
+<div class="page-hero-art art-string-theory">
+
+<div class="page-orbit"></div>
+
+<div class="art-object"></div>
+
+</div>
+
+<h3>
+String Theory
+</h3>
+
+<p>
+
+A theoretical framework in which fundamental
+entities are modeled as extremely small
+vibrating strings.
+
+</p>
+
+</div>
+
+
+<!-- TIME RELATIVITY -->
+
+<div class="glass-card fact-card scroll-reveal">
+
+<div class="page-hero-art art-time-relativity">
+
+<div class="page-orbit"></div>
+
+<div class="art-object"></div>
+
+</div>
+
+<h3>
+Time Relativity
+</h3>
+
+<p>
+
+Relativity predicts that elapsed time depends
+on relative motion and gravitational environment.
+
+</p>
+
+</div>
+
+
+<!-- SPACETIME -->
+
+<div class="glass-card fact-card scroll-reveal">
+
+<div class="page-hero-art art-space-relativity">
+
+<div class="page-orbit"></div>
+
+<div class="art-object"></div>
+
+</div>
+
+<h3>
+Spacetime
+</h3>
+
+<p>
+
+Space and time form a four-dimensional geometric
+structure whose curvature is related to gravity.
+
+</p>
+
+</div>
+
+
+<!-- THEIA -->
+
+<div class="glass-card fact-card scroll-reveal">
+
+<div class="page-hero-art art-theia">
+
+<div class="page-orbit"></div>
+
+<div class="art-object"></div>
+
+</div>
+
+<h3>
+Theia
+</h3>
+
+<p>
+
+A hypothesized ancient planetary body involved
+in the giant-impact scenario for the formation
+of the Moon.
+
+</p>
+
+</div>
+
+
+<!-- ORIGIN OF LIFE -->
+
+<div class="glass-card fact-card scroll-reveal">
+
+<div class="page-hero-art art-origin-of-life">
+
+<div class="page-orbit"></div>
+
+<div class="art-object"></div>
+
+</div>
+
+<h3>
+Origin of Life
+</h3>
+
+<p>
+
+Explore scientific hypotheses about how chemistry
+on the early Earth may have transitioned toward
+biological systems.
+
+</p>
+
+</div>
+
+
+<!-- MYSTERIOUS OBJECTS -->
+
+<div class="glass-card fact-card scroll-reveal">
+
+<div class="page-hero-art art-mysterious-life-and-objects">
+
+<div class="page-orbit"></div>
+
+<div class="art-object"></div>
+
+</div>
+
+<h3>
+Mysterious Cosmic Objects
+</h3>
+
+<p>
+
+Investigate neutron stars, quasars, pulsars,
+dark matter, exoplanets and other extraordinary
+astronomical phenomena.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     FACT ARCHIVE
+========================= -->
+
+<section class="section-container">
+
+<div class="glass-card scroll-reveal">
+
+<h2>
+Explore 50+ Facts Per World
+</h2>
+
+<p>
+
+Each dedicated page can contain detailed physical
+properties, composition, atmosphere, temperature,
+gravity, rotation, orbit, moons, exploration missions,
+formation history and unusual facts.
+
+</p>
+
+<a
+href="../pages/facts.html"
+class="cosmic-badge">
+
+OPEN COSMIC FACTS
+
+</a>
+
+</div>
+
+</section>
+
+</main>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer class="site-footer">
+
+<div class="footer-container">
+
+
+<div class="footer-info">
+
+<a href="index.html" class="logo">
+COSMOS<span>EXPLORER</span>
+</a>
+
+<p>
+
+A visual astronomy project for exploring planets,
+stars, cosmic evolution, theoretical physics and
+the mysteries of space.
+
+</p>
+
+</div>
+
+
+<div class="footer-links">
+
+<h4>
+Explore
+</h4>
+
+<ul>
+
+<li>
+<a href="index.html">
+Home
+</a>
+</li>
+
+<li>
+<a href="../pages/solar-system.html">
+Solar System
+</a>
+</li>
+
+<li>
+<a href="../pages/sun.html">
+Sun
+</a>
+</li>
+
+<li>
+<a href="../pages/mercury.html">
+Planets
+</a>
+</li>
+
+<li>
+<a href="../pages/facts.html">
+Facts
+</a>
+</li>
+
+</ul>
+
+</div>
+
+
+<div class="footer-contact">
+
+<h4>
+Cosmic Topics
+</h4>
+
+<p>
+Black Holes
+</p>
+
+<p>
+Big Bang
+</p>
+
+<p>
+String Theory
+</p>
+
+<p>
+Relativity
+</p>
+
+<p>
+Theia
+</p>
+
+</div>
+
+</div>
+
+
+<div class="footer-bottom">
+<p>
+YOUTUBE:
+<a href="https://youtube.com/@hackvers?si=GxKncvniy0WXfodK"
+   target="_blank"
+   rel="noopener noreferrer">
+Hackvers
+</a>
+</p>
+
+<p>
+INSTAGRAM:
+<a href="https://www.instagram.com/unfulfilledhopes?stkn=MXZibWRkY2toM244eQ=="
+   target="_blank"
+   rel="noopener noreferrer">
+Unfulfilled Hopes
+</a>
+</p>
+
+<p>
+FACEBOOK:
+<a href="https://www.facebook.com/share/1BDeEHmyba/"
+   target="_blank"
+   rel="noopener noreferrer">
+Facebook
+</a>
+</p>
+© <span id="year">2026</span>
+Cosmos Explorer · Astronomy & Cosmos Guide
+
+</div>
+
+</footer>
+
+
+<button
+class="back-to-top"
+id="backToTop"
+aria-label="Back to top"
+type="button">
+
+↑
+
+</button>
+
+
+<!-- IMPORTANT:
+     index.html is inside /html/
+-->
+<script src="../js/script.js"></script>
+
+</body>
+  </html>
